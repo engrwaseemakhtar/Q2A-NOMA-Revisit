@@ -79,9 +79,9 @@ mean_exploitation_rewards = movmean(exploitation_rewards, window_size);
 % Plot only mean rewards
 figure;
 hold on;
-plot(mean_total_rewards, 'k', 'DisplayName', 'Mean Total Reward');
-plot(mean_exploration_rewards, 'm', 'DisplayName', 'Mean Exploration Reward');
-plot(mean_exploitation_rewards, 'c', 'DisplayName', 'Mean Exploitation Reward');
+%plot(mean_total_rewards, 'k', 'DisplayName', 'Mean Total Reward');
+plot(mean_exploration_rewards, 'k', 'DisplayName', 'No Learning');
+plot(mean_exploitation_rewards, 'r', 'DisplayName', 'Q2A-NOMA');
 xlabel('Iteration');
 ylabel('Mean Reward');
 grid on
